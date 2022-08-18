@@ -14,6 +14,7 @@ public class Team {
 
     private String name;
 
+    // 양방향 코드
     @OneToMany(mappedBy = "team")
     private List<Member> members = new ArrayList<>();
 
